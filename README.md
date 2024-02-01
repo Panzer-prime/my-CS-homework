@@ -1,3 +1,3 @@
-# my-CS-homework
+# info-hw
 tema la info 
-my Cs homework
+
