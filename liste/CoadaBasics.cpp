@@ -48,8 +48,8 @@ void stergere(nod* &prim){
     if(prim){
        p = prim;
       prim = prim -> urm;
-      delete prim;
-    }else cout<<"coada vida";
+      delete p;
+    }else cout<<coada vida";
 
 }
 
