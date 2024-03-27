@@ -70,10 +70,6 @@ void concatenareInCoada(nod* &vfStiva, nod* &coada) {
         adaugaDupaUltim(coada, p->info); 
     }
 
-    nod* temp;
-    while (vfStiva != NULL) {
-        eliminare(vfStiva);
-    }
     vfStiva = NULL; 
 }
 
@@ -81,10 +77,6 @@ void concatenareInStiva(nod* &vfStiva, nod* &coada) {
     nod* p;
     for (p = coada; p != NULL; p = p->next) {
         adaugInStiva(vfStiva, p->info); 
-    }
-
-    while (coada != NULL) {
-        eliminare(coada);
     }
     coada = NULL; 
 }
@@ -99,6 +91,7 @@ bool sumaStiva(nod* prim){
     if(suma % 2) return false;
     else return true;
 }
+
 int main() {
     nod* prim, *ultim, *vfStiva = NULL; 
 
