@@ -115,7 +115,7 @@ int isSorted(int low, int high)
     if (high == low)
         return 1;
 
-    if (low + 1 <= high)
+    if (low + 1 == high)
         return x[low] >= x[high];    
     else
     {
