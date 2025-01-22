@@ -6,11 +6,11 @@ using namespace std;
 ifstream file("data.txt");
 
 void createa_graph(int mat[10][10], int m){
-
+    int x,y;
     for(int i = 1; i <= m; i++){
-        for(int j = 1; j <= m; j++){
-            mat[i][j] = mat[j][i] = 1;
-        }    
+        file >> x >> y;
+        mat[x][y] = mat[y][x] = 1;
+          
     }
 
 }
@@ -32,8 +32,8 @@ void display_graph(int mat[10][10], int n){
 
     cout<<"afisare graf\n";
 
-    for(int i = 1; i <= n; i++){
-        for(int j = 1; j <= n; j++){
+    for(int i = 1; i < n; i++){
+        for(int j = i+1; j <= n; j++){
             if(mat[i][j])
                 cout<<"["<<i<<","<<j<<"] ";
         }
@@ -50,7 +50,7 @@ int main(){
     createa_graph(mat, m);
     display_graph(mat, n);
     if(check_graph(mat, n)){
-        cout<<"nu este neorientat";
+        cout<<"este neorientat";
     }
 
 
