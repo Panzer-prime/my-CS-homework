@@ -91,6 +91,7 @@ void get_noduri_izolate() {
 
     cout<<"numarul de noduri izolate "<<izo_count;
 }
+
 int main()
 {
 

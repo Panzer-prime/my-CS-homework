@@ -14,7 +14,7 @@ void towerOfHanoi(int n,char a, char b, char c){
 
 
 int main(){
-    int i, result = 0;
+    int i,n, result = 0;
     cout<<"Introdu numarul de elemente n: ";
     cin>>n;
 
